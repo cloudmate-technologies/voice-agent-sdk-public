@@ -18,6 +18,7 @@ declare class VoiceAgent {
     private readonly SCRIPT_URL;
     private constructor();
     static getInstance(): VoiceAgent;
+    private waitForSDK;
     private loadScript;
     private getElementConfig;
     init(): Promise<void>;
