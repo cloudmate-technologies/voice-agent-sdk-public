@@ -1,12 +1,6 @@
 declare global {
     interface Window {
-        vapiSDK: {
-            run: (config: {
-                assistant: string;
-                apiKey: string;
-                config: any;
-            }) => any;
-        };
+        vapiSDK: any;
         vapiInstance: any;
         VoiceAgent: typeof VoiceAgent;
     }
